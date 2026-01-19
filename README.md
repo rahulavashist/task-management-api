@@ -370,38 +370,6 @@ Common HTTP status codes:
 - `404` - Not Found
 - `500` - Internal Server Error
 
-## 🧪 Testing
-
-To test the API, you can use:
-- **Swagger UI** - Interactive documentation at `/api-docs` (Recommended)
-- **Postman** - API testing tool
-- **cURL** - Command-line tool
-- Any HTTP client
-
-## 🚀 Deployment
-
-### Environment Variables for Production
-
-Make sure to update these in production:
-- `NODE_ENV=production`
-- `JWT_SECRET` - Use a strong, random secret (minimum 32 characters)
-- `MONGODB_URI` - Use a production MongoDB connection string
-- `REDIS_HOST` and `REDIS_PORT` - Production Redis instance
-- `FRONTEND_URL` - Your frontend URL
-- `API_URL` - Your production API URL
-
-### Deployment Platforms
-
-The API can be deployed to:
-- **Heroku**
-- **AWS** (EC2, Elastic Beanstalk, Lambda)
-- **Google Cloud Platform**
-- **Azure**
-- **DigitalOcean**
-- **Railway**
-- **Render**
-- **Vercel**
-
 ## 📋 Assumptions and Design Decisions
 
 1. **Password Requirements**: Minimum 8 characters with uppercase, lowercase, number, and special character
@@ -413,45 +381,6 @@ The API can be deployed to:
 7. **Pagination**: Default 10 items per page, configurable via query parameters
 8. **Email Service**: Optional - API works without email configuration
 9. **Redis**: Optional - API works without Redis but caching will be disabled
-
-## 🔮 Future Enhancements
-
-- [ ] Email verification for new registrations
-- [ ] Password reset functionality
-- [ ] File attachments for tasks
-- [ ] Task comments and activity logs
-- [ ] Advanced search with full-text search
-- [ ] Task templates
-- [ ] Recurring tasks
-- [ ] Task dependencies
-- [ ] Export functionality (CSV, PDF)
-- [ ] Mobile app support
-- [ ] Two-factor authentication
-- [ ] Task notifications via email/push
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-ISC
-
-## 📞 Support
-
-For issues and questions, please open an issue in the repository.
-
-## 🙏 Acknowledgments
-
-- Built with Express.js and Node.js
-- Uses MongoDB for data storage
-- Redis for caching
-- Socket.io for real-time updates
-- Swagger/OpenAPI for documentation
 
 ---
 
